@@ -1,131 +1,197 @@
 body {
-		width: 100%;
-		padding: 0;
-		margin: 0;	
-	}
-*{
-  vertical-align: baseline;  
-  font-family: inherit;  
-  font-style: inherit;  
-  font-size: 100%;  
-  border: none;  
-  padding: 0;  
-  margin: 0;  
-	}
-.block{
-	clear: both;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+
+	background-color: rgb(232, 225, 227);
+background-size:100% 600px;
 }
-.header {
+body img {
 	width: 100%;
-	height: 10%;
-	background-color: #fff;
-	font-size: 25px;
-		color: #000;
-		overflow: hidden;
-		font-family: Arial,Helvetica, sans-serif;
+	font
 }
-.header_menu {
-position: relative;	
-margin-left:20%;
-margin-top: 6%;
+*{
+margin: 0;
 padding: 0;
-z-index: 999;
+}
+.content {
+	width: 70%;
+	height: 40%;
+	clear: both;
+	margin: 0 auto;
+	position: relative;
+	
+}
+
+
+.content_blok{
+		border-radius: 5px;
+	height: 30%;
+	background-color: rgb(93, 194, 118);
 
 }
-.menu_glavn {
-	margin: 10px 10px 10px 0px;
-	list-style: none;
-	z-index: 10;
+.content_blok img {
+	width: 15%;
+	height: 15%;
+	margin:5px 0 5px 10px;
+	border: solid  rgb(93, 117, 60);
+	border-radius: 50%;
+
 }
-.menu_glavn li:hover {
-	color:rgb(220,110,135);
+#search {
+	width: 35%;
+	float: right;
+	padding: 10px;
+	margin-top: 10%;
+
+
 }
-.menu_glavn a:hover {
-	color:rgb(220,110,135);
+#search input {
+	height: 40px;
+	border: none;
+	float: left;
+	padding: 0 10px;
+	border-radius: 10px;
+	margin-left: 5px;
 }
-.menu_glavn > li {
+#search input[type="text"]{
+	width: 65%;
+
+}
+#search input[type="submit"]{
+	width: 22%;
+	text-align: center;
+}
+.content_menu {
+	width: 99.3%;
+	height: 5%;
+	
+	margin-top: 10px;
+	margin: 0 auto;
+	display: block;
+border:  solid rgb(227, 181, 73);
+background-color: rgb(252, 248, 124);
+background-origin: content-box;
+	border-radius: 5px;
+	color: rgb(93, 117, 60);
+
+}
+ .menu_spiska {
+list-style: none;
+margin-left:10px;
+
+}
+ .menu_spiska a:hover {
+ 	background-color: rgb(252, 248, 124);
+ }
+ .menu_spiska > li,
+ .sub-menu_meropr > li,
+ .sub-menu_uchenik >li {
 	display: inline-block;
-   padding: 15px 50px 5px 10px;
-  position: relative;
-   
+	margin: 0;
+	position: relative;
+	list-style: none;
 }
- .sub-menu_fizika, .sub-menu_uchenik {
- position: absolute;
+ .menu_spiska a {
+	display: inline-block;
+	padding: 10px;
+	margin-right: 5px;
+	font-size: 1.3em;
+	text-decoration: none;
+    padding-left: 5px;
+	color:rgb(97, 79, 37);
+	
+}
+.sub-menu_material, .sub-menu_uchenik, .sub-menu_meropr {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #fcf8e3;
-  left: 15px;
-  width: 170px;
+  position: absolute;
+list-style: none;
+ left: 1px;
+  width: 220px;
+  margin-top: 3px;
   display: none;
- font-size: 20px;
-
  
-}
-.sub-menu_fizika a,
-.sub-menu_uchenik a {
-	padding-top: 10px;
-    margin: 15px 0 0 10px;
-    text-decoration: none;
-    color: rgb(220,110,135);
-}
-.menu_glavn > li:hover .sub-menu_fizika {
-	display: block;
-	z-index: 10;
 
 }
-.menu_glavn > li:hover .sub-menu_uchenik {
-	display: block;
-z-index: 10;
+.sub-menu_material a,
+.sub-menu_uchenik a, 
+.sub-menu_meropr a {
+	 
+	 padding: 8px;
 }
+ .menu_spiska > li:hover .sub-menu_material,
+ .menu_spiska > li:hover .sub-menu_uchenik, 
+ .menu_spiska > li:hover .sub-menu_meropr {
+ 	display: block;
+ 	width: 150px;
+ 	background-color: rgb(227, 181, 73);
+ 	z-index: 1000;
+ 	padding-left: 5px;
+ 	
+ }
+ .conteiner1 {
+ 	margin-top: 50px;
+ 	width: 33%;
+ 	height: auto;
+ 	float: left;
+ 	background-color: rgb(166, 162, 165);
+ 	color: white;
+	border-radius: 5px;
 
-.menu_glavn  a {
-	text-decoration: none;
-	color: #000;;
-}
+ }
+ .conteiner2 {
+ 	margin-top: 50px;
+ 	width: 65%;
+ 	height: auto;
+ 	float: right;
+ 	background-color: rgb(166, 162, 165);
+ 	color: white;
+ 	border-radius: 5px;
 
-
-.block1 {
-	width: 100%;
-	height:auto;
-	display: inline-block;
-	position: relative;
-	width: 65%;
-	margin: 0 10px 0 40px;
-}
-.block1	img {
-	width: 100%;
-	height: 600px;
-border-radius: 30px;
-
-}
-.block1_conteiner {
-	float: right;
-	width: 25%;
-	border: 2px solid ;
-	border-radius: 30px;
-	clear: both;
-	margin: 0 40px 0 0;
-	padding: 10px 5px 0 10px;
-	text-align: center;
-	font-size: 25px;
-	color: #cf6363;
-}
- .block1_conteiner .block1_novosti {
-	color: rgb(148, 120, 120);
-	font-size: 16px;
-	padding-top: 5px;
-	font-family: Arial,Helvetica, sans-serif;
-	text-align: left;
-}
-
-.footer {
-	width: 100%;
-	height: 10%;
-	display: inline-block;
-	background-color: rgba(211, 206, 240, 0.7);
+ }
+ @media (max-width: 1142px) and (min-width: 1022px) {
+ 	#search input {
+	height: 35px;
+	border: none;
+	float: left;
+	padding: 0 10px;
 	border-radius: 10px;
+	margin-left: 5px;
 }
-.footer_contacti {
-margin: 10px 0 10px 20px;
+.menu_spiska {
+	font-size: 14px;
+	display: inline;
+	
+ }
+}
+@media (max-width: 1021px) and (min-width: 768px) {
+	.menu_spiska li{ 
+		display: block;
+	}
+	.menu_spiska a {
+		padding: 8px;
+	}
+	.sub-menu_material, .sub-menu_uchenik, .sub-menu_meropr {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ 
+list-style: none;
+ left: 1px;
+  width: 100%;
+  margin-top: 3px;
+  display: none;
+}
+.menu_spiska > li:hover .sub-menu_material,
+ .menu_spiska > li:hover .sub-menu_uchenik, 
+ .menu_spiska > li:hover .sub-menu_meropr {
+ 	display: block;
+ 	width: 60%;
+ 	background-color: rgb(227, 181, 73);
+ 	z-index: 1000;
+ 	padding-left: 1px;
+ }
 }
