@@ -8,26 +8,29 @@
 </head>
 <body>
 	<div class="content">
-		<div class="content_blok"><img src="./img/logo.jpg">
-		<form action="#" id="search" class="clearfix">
-			<input type="text" placeholder="Поиск"/>
-			<input type="submit" value="Найти"/>
-		</form>
-		</div>
+		<div class="content_blok"></div>
 		<div class="content_menu">
+			<div class="content_menu-btn" id="cross">
+			  	<span class="first"></span>
+			  	<span class="second"></span>
+			  	<span class="third"></span>
+			</div>
 			<ul class="menu_spiska">
 				<li><a href="#glavn">Главная</a></li>
-				<li><a href="#fizika">Физика</a>
+				<li>
+					<a class="fizika_ssilka" href="#fizika">Физика</a>
+					<div class="menu_fizika"></div>
 				    <ul class="sub-menu_material">
-		 	  		<li><a href="#istiriafiziki">История физики</a></li>
-		 	  		<li><a href="#vklad">Вклад ученых физиков в науку</a></li>
-		 	  		<li><a href="#tematichplanirovanie">Тематическое планирование</a></li>
-		 	  		<li><a href="#Razrabotka_urokov">Разработка уроков</a></li>
-		 	  		<li><a href="#Proektdeyatilnost">Проектная деятельность</a></li>
-		 	  		<li><a href="#presentazia">Презентации к урокам</a></li>
+		 	  			<li><a href="#istiriafiziki">История физики</a></li>
+		 	  			<li><a href="#vklad">Вклад ученых физиков в науку</a></li>
+		 	  			<li><a href="#tematichplanirovanie">Тематическое планирование</a></li>
+		 	  			<li><a href="#Razrabotka_urokov">Разработка уроков</a></li>
+		 	  			<li><a href="#Proektdeyatilnost">Проектная деятельность</a></li>
+		 	  			<li><a href="#presentazia">Презентации к урокам</a></li>
 		 	  		</ul>
 		 	  	</li>
-				<li><a href="#klassnoerukovodstvo">Классное руководство</a>
+				<li><a   href="#klassnoerukovodstvo">Классное руководство</a>
+					<div class="menu_rukovodsyvo"><div class="knopka_rukovodstvo"></div></div>
 					<ul class="sub-menu_meropr">
 						<li><a href="#Pedagogika">Педагогика</a></li>
 						<li><a href="#Psihologia">Психология</a></li>
@@ -43,5 +46,14 @@
 		<div class="conteiner1">tgrhgthtyh</div>
 		<div class="conteiner2">tyhythghtht</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var menuBtn = $('#cross');
+		var menuSpiska = $('.menu_spiska');
+		menuBtn.on('click', function() {
+		    menuBtn.toggleClass('content_menu-btn-checked');
+		    menuSpiska.toggleClass('menu_spiska-show');
+		});
+	</script>
 </body>
 </html>
