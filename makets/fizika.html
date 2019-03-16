@@ -11,6 +11,7 @@
 	<div class="header"></div>
 		<div class="header-logotip"></div>
 		<div class="header-menu">
+			<div class="header-menu-btn"><a href="" class="header-menu__btn"><span></span></a></div>
 			<ul class="header-menu_items">
 				<li><a href="">Главная</a></li>
 				<li><a href="">Физика</a>
@@ -47,7 +48,14 @@
 		</div>
 </div>	
 
-
+<script  src="http://code.jquery.com/jquery-1.12.4.min.js" ></script>
+	<script>
+		$('.header-menu-btn').on('click', function(e){
+			e.preventDefault();
+			$(this).toggleClass('menu-btn_active');
+			$('.header-menu_sub-items').toggleClass('menu_active');
+		})
+    </script>
 
 </body>
 </html>
