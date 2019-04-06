@@ -11,10 +11,11 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
- <div class="main-header">
-	<div class="main-header__menu">
-		<div class="main-header__home"><a href="#"><i class="home fa fa-home" aria-hidden="true"></i></a></div>
-		<div class="main-header__search">
+<div class="wrapper">
+ <div class="header">
+	<div class="header__menu">
+		<div class="header__home"><a href="#"><i class="home fa fa-home" aria-hidden="true"></i></a></div>
+		<div class="header__search">
 			<form action="" method="">
 				<input class="input_search" type="text" name="search" maxlength="50" placeholder="Поиск">
 				<button class="button_search" type="submit"><i class="search fa fa-search" aria-hidden="true"></i></button>
@@ -23,43 +24,43 @@
 	</div>
  </div>
 <div class="main">
-	<div class="header-logotip"></div>
-		<div class="content">
-		  <div class="header-menu">
-			   <div class="header-menu-btn"><a href="" class="header-menu__btn"><span></span></a></div>
-			<ul class="header-menu_items">
-				  <li><a href="">Главная</a></li>
-				  <li><a href="">Физика</a><img src="./img/icon26.png">
-					  <ul class="header-menu_sub-items">
+	<div class="main-logotip"></div>
+	<div class="content">
+		<div class="content-menu">
+			<div class="content-menu-btn"><a href="" class="content-menu__btn"><span></span></a></div>
+			<ul class="content-menu__items">
+				<li><a href="">Главная</a></li>
+				<li><a href="">Физика</a><img src="./img/icon26.png">
+						<ul class="content-menu__sub-items">
 						  <li><a href="">История физики</a></li>
 						  <li><a href="">Вклад ученых физиков в науку</a></li>
 						  <li><a href="">Тематическое планирование</a></li>
 						  <li><a href="">Разработка уроков</a></li>
 						  <li><a href="">Проектная деятельность</a></li>
 						  <li><a href="">Презентации уроков</a></li>
-					  </ul>
+					 	</ul>
 				   </li>
-				   <li><a href="">Классное руководство</a><img src="./img/icon26.png">
-					   <ul class="header-menu_sub-items">
+				<li><a href="">Классное руководство</a><img src="./img/icon26.png">
+						<ul class="content-menu__sub-items">
 						  <li><a href="">Педагогика</a></li>
 						  <li><a href="">Психология</a></li>
 						  <li><a href="">Родителям</a></li>
 						  <li><a href="">Внеклассные мероприятия</a></li>
-					   </ul>
-				   </li>
+						</ul>
+				</li>
 				<li><a href="">Фотогалерея</a></li>
 				<li><a href="">О себе</a></li>
 				<li><a href="">Контакты</a></li>
-			 </ul>
-		   </div>
-		  <div class="header-content">
-			 <div class="header-content-slider"></div>
+			</ul>
+		</div>
+		  <div class="content-infa">
+			 <div class="content-slider"></div>
 			<!-- <div class="header-article">
 				 <div class="header-article_block"></div>
 				 <div class="header-article_block"></div>
 				 <div class="header-article_block"></div>
 			 </div><-->
-			 <div class="header-content-infa">
+			 <div class="content-infa__block">
 			 	<h2>Физика&Наука</h2>
 <p>Фи́зика (от др.-греч. φύσις — природа) — область естествознания: наука о простейших и вместе с тем наиболее общих законах природы, о материи, её структуре и движении. Законы физики лежат в основе всего естествознания[1][2].
 
@@ -70,7 +71,7 @@
 Знания физики процессов, происходящих в природе, постоянно расширяются и углубляются. Большинство новых открытий вскоре получают технико-экономическое применение (в частности в промышленности). Однако перед исследователями постоянно встают новые загадки, — обнаруживаются явления, для объяснения и понимания которых требуются новые физические теории. Несмотря на огромный объём накопленных знаний, современная физика ещё очень далека от того, чтобы объяснить все явления природы.</p>
 			 	</div>
 		  </div>
-    	</div>	
+    </div>	
 </div>
 <div class="footer">
 	<div class="footer-logotip">В социальных сетях:
@@ -83,12 +84,12 @@
 </div>
 <script  src="http://code.jquery.com/jquery-1.12.4.min.js" ></script>
 	<script>
-		$('.header-menu-btn').on('click', function(e){
+		$('.content-menu-btn').on('click', function(e){
 			e.preventDefault();
-			$(this).toggleClass('menu-btn_active');
-			$('.header-menu_sub-items').toggleClass('menu_active');
+			$(this).toggleClass('menu-btn__active');
+			$('.content-menu__sub-items').toggleClass('menu__active');
 		})
     </script>
-
+</div>
 </body>
 </html>
